@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 9}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 277, y: 433}
   m_MaxSize: {x: 4002, y: 12063}
   vertical: 1
-  controlID: 2845
+  controlID: 155
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -216,7 +216,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &10
 MonoBehaviour:
@@ -263,7 +263,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 2844
+  controlID: 154
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -446,9 +446,9 @@ MonoBehaviour:
     height: 465
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d872fcff
-    m_LastClickedID: 0
-    m_ExpandedIDs: 86fbffff00000000
+    m_SelectedIDs: a8d2fbff
+    m_LastClickedID: -273752
+    m_ExpandedIDs: ccd2fbffd2d2fbff8e90fcff9290fcff9490fcffa890fcffaa90fcffb290fcffb490fcffb690fcffba90fcffd490fcffd690fcffd890fcfff090fcff3203fdff3603fdff3a03fdff4c03fdff4e03fdff5603fdff5803fdff5a03fdff5e03fdff7603fdff7803fdff7a03fdff9403fdff44f8ffff86fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -542,19 +542,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/04. Images/Material
+    - Assets/05. Models/AngryBotPlayer
   m_ViewMode: 1
   m_StartGridSize: 62
   m_LastFolders:
-  - Assets/04. Images/Material
+  - Assets/05. Models/AngryBotPlayer
   m_LastFoldersGridSize: 62
   m_LastProjectPath: C:\Users\mason\Desktop\unity.2017.11.22.unity5-by-lee-jaehyun\GameStage
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f22b0000
-    m_LastClickedID: 11250
-    m_ExpandedIDs: 00000000fe2800002a290000262a000000ca9a3bffffff7f
+    m_SelectedIDs: dc1a0100
+    m_LastClickedID: 72412
+    m_ExpandedIDs: 00000000fe2800002c290000822900002e2a0000208100007e020100dc1a010000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -579,10 +579,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 00000000fe2800002a290000
+    scrollPos: {x: 0, y: 510}
+    m_SelectedIDs: 7eb90000
+    m_LastClickedID: 47486
+    m_ExpandedIDs: 00000000fe2800002c290000822900002e2a0000fe80000020810000bc8100007e020100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -636,7 +636,7 @@ MonoBehaviour:
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 62
-  m_DirectoriesAreaWidth: 198
+  m_DirectoriesAreaWidth: 181
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -740,14 +740,14 @@ MonoBehaviour:
     width: 900
     height: 610
   m_SceneLighting: 1
-  lastFramingTime: 3581.2341765055003
+  lastFramingTime: 1630.6181985293647
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 3, z: 0}
+    m_Target: {x: -0.221, y: 0, z: 0}
     speed: 2
-    m_Value: {x: 0, y: 3, z: 0}
+    m_Value: {x: -0.221, y: 0, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -770,13 +770,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.052844107, y: 0.9370677, z: -0.16268614, w: -0.3043836}
+    m_Target: {x: 0.032266818, y: -0.9456797, z: 0.09908855, w: 0.3079759}
     speed: 2
-    m_Value: {x: -0.052843988, y: 0.93706554, z: -0.16268577, w: -0.30438292}
+    m_Value: {x: 0.032266513, y: -0.94567084, z: 0.09908762, w: 0.307973}
   m_Size:
-    m_Target: 65.89491
+    m_Target: 6.6085405
     speed: 2
-    m_Value: 65.89491
+    m_Value: 6.6085405
   m_Ortho:
     m_Target: 1
     speed: 2
