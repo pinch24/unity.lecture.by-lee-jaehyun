@@ -10,6 +10,7 @@ public class PlayerControl : MonoBehaviour {
 	private Transform tr;
 	
 	public float moveSpeed = 10.0f;
+	public float rotateSpeed = 100.0f;
 	
 	void Start () {
 		
@@ -19,13 +20,14 @@ public class PlayerControl : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-        h = Input.GetAxis("Horizontal");
+		h = Input.GetAxis("Horizontal");
 		v = Input.GetAxis("Vertical");
 
 		Debug.Log("H=" + h.ToString());
 		Debug.Log("V=" + v.ToString());
 
 		Vector3 moveDirection = (Vector3.forward * v) + (Vector3.right * h);
-		tr.Translate(moveDirection * moveSpeed * Time.deltaTime, Space.Self);
+		tr.Translate(moveDirection.normalized * moveSpeed * Time.deltaTime, Space.Self);
+		tr.Rotate(Vector3.up * rotateSpeed * Time.deltaTime * Input.GetAxis("Mouse X"));
 	}
 }
