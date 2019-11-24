@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+[RequireComponent(typeof(NavMeshAgent))]
 public class MoveAgent : MonoBehaviour
 {
     public List<Transform> wayPoints;
@@ -47,6 +48,14 @@ public class MoveAgent : MonoBehaviour
             _traceTarget = value;
             agent.speed = traceSpeed;
             TraceTarget(_traceTarget);
+        }
+    }
+
+    public float speed
+    {
+        get
+        {
+            return agent.velocity.magnitude;
         }
     }
 

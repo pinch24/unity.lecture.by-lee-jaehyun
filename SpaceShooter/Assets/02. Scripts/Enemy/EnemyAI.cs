@@ -15,6 +15,7 @@ public class EnemyAI : MonoBehaviour
 
     private Transform playerTr;
     private Transform enemyTr;
+    private Animator animator;
 
     public float attackDist = 5.0f;
     public float traceDist = 10.0f;
@@ -25,6 +26,9 @@ public class EnemyAI : MonoBehaviour
 
     private MoveAgent moveAgent;
 
+    private readonly int hashMove = Animator.StringToHash("IsMove");
+    private readonly int hashSpeed = Animator.StringToHash("Speed");
+
     private void Awake()
     {
         var player = GameObject.FindGameObjectWithTag("PLAYER");
@@ -33,6 +37,8 @@ public class EnemyAI : MonoBehaviour
             playerTr = player.GetComponent<Transform>();
 
         enemyTr = GetComponent<Transform>();
+
+        animator = GetComponent<Animator>();
 
         moveAgent = GetComponent<MoveAgent>();
 
@@ -82,14 +88,17 @@ public class EnemyAI : MonoBehaviour
             {
                 case State.PATROL:
                     moveAgent.patrolling = true;
+                    animator.SetBool(hashMove, true);
                     break;
 
                 case State.TRACE:
                     moveAgent.traceTarget = playerTr.position;
+                    animator.SetBool(hashMove, true);
                     break;
 
                 case State.ATTACK:
                     moveAgent.Stop();
+                    animator.SetBool(hashMove, false);
                     break;
 
                 case State.DIE:
@@ -97,5 +106,10 @@ public class EnemyAI : MonoBehaviour
                     break;
             }
         }
+    }
+
+    private void Update()
+    {
+        animator.SetFloat(hashSpeed, moveAgent.speed);
     }
 }
