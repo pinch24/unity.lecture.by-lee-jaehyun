@@ -19,6 +19,8 @@ public class BarrelCtrl : MonoBehaviour
     private AudioSource _audio;
     public AudioClip expSfx;
 
+    public Shake shake;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -29,6 +31,8 @@ public class BarrelCtrl : MonoBehaviour
         _renderer.material.mainTexture = textures[Random.Range(0, textures.Length)];
 
         _audio = GetComponent<AudioSource>();
+
+        shake = GameObject.Find("CameraRig").GetComponent<Shake>();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -53,6 +57,8 @@ public class BarrelCtrl : MonoBehaviour
         meshFilter.sharedMesh = meshes[idx];
 
         _audio.PlayOneShot(expSfx, 1.0f);
+
+        StartCoroutine(shake.ShakeCamera(0.04f, 0.08f, 0.08f));
     }
 
     void IndirectDamage(Vector3 pos)
